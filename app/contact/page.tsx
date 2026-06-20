@@ -68,7 +68,7 @@ export default function ContactPage() {
               SUPPORT & INQUIRIES
             </span>
             <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl md:text-6xl uppercase">
-              Contact Striker FC
+              Contact Vindhyachal FC
             </h1>
             <p className="text-zinc-300 text-sm md:text-base max-w-xl mx-auto">
               Reach out for academy enrollment, partnerships, sponsorships, and matches.
@@ -139,8 +139,8 @@ export default function ContactPage() {
                     </div>
                     <div className="flex flex-col gap-1">
                       <span className="text-xs font-bold text-zinc-400 uppercase tracking-wide">Email Address</span>
-                      <a href="mailto:contact@strikerfc.com" className="text-sm font-bold text-zinc-800 hover:text-blue-600 transition-colors">
-                        contact@strikerfc.com
+                      <a href="mailto:contact@vindhyachalfc.com" className="text-sm font-bold text-zinc-800 hover:text-blue-600 transition-colors">
+                        contact@vindhyachalfc.com
                       </a>
                     </div>
                   </div>
@@ -218,7 +218,7 @@ export default function ContactPage() {
                     </div>
                     <h4 className="text-lg font-extrabold text-zinc-900">Message Sent Successfully!</h4>
                     <p className="text-sm text-zinc-600 leading-relaxed max-w-sm">
-                      Thank you for contacting Striker FC. Our club coordinator will review your request and get back to you shortly.
+                      Thank you for contacting Vindhyachal FC. Our club coordinator will review your request and get back to you shortly.
                     </p>
                   </div>
                 ) : (
@@ -328,7 +328,7 @@ export default function ContactPage() {
                   allowFullScreen={true}
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="Striker FC Headquarters Map"
+                  title="Vindhyachal FC Headquarters Map"
                 ></iframe>
               </div>
             </div>

@@ -76,7 +76,7 @@ export default async function PlayerProfilePage({ params }: PageProps) {
               {/* Header Title */}
               <div className="flex flex-col gap-1.5 pb-6 border-b border-zinc-200">
                 <span className="text-sm font-bold text-blue-600 uppercase tracking-widest">
-                  Striker FC Squad Member
+                  Vindhyachal FC Squad Member
                 </span>
                 <h1 className="text-4xl font-extrabold tracking-tight text-zinc-900 sm:text-5xl">
                   {player.name}
