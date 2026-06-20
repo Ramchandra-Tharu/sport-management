@@ -24,7 +24,7 @@ export default function TeamPage() {
       <main className="flex-1 flex flex-col bg-white text-zinc-900">
         
         {/* Team Banner */}
-        <section className="relative h-[250px] md:h-[350px] flex items-center justify-center bg-black text-center">
+        <section className="relative h-[380px] md:h-[520px] flex items-center justify-center bg-black text-center">
           {/* Background — Parallax */}
           <div
             className="absolute inset-0 z-0"

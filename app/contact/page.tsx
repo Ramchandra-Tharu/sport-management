@@ -51,7 +51,7 @@ export default function ContactPage() {
       <main className="flex-1 flex flex-col bg-white text-zinc-900">
         
         {/* Banner Section */}
-        <section className="relative h-[250px] md:h-[350px] flex items-center justify-center bg-black text-center">
+        <section className="relative h-[380px] md:h-[520px] flex items-center justify-center bg-black text-center">
           <div className="absolute inset-0 z-0">
             <Image
               src="https://images.unsplash.com/photo-1431324155629-1a6edd1def2d?auto=format&fit=crop&q=80&w=1200"

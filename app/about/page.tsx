@@ -10,7 +10,7 @@ export default function AboutPage() {
       <main className="flex-1 flex flex-col bg-white text-zinc-900">
         
         {/* 1. Banner Image Section */}
-        <section className="relative h-[300px] md:h-[400px] flex items-center justify-center bg-black text-center">
+        <section className="relative h-[380px] md:h-[520px] flex items-center justify-center bg-black text-center">
           {/* Background — Parallax */}
           <div
             className="absolute inset-0 z-0"
@@ -24,7 +24,7 @@ export default function AboutPage() {
           />
           <div className="absolute inset-0 z-0 bg-gradient-to-b from-black/40 to-black/70" />
           
-          <div className="relative z-10 px-6 md:px-12 flex flex-col gap-3">
+          <div className="relative z-10 px-6 md:px-12 flex flex-col gap-3 pt-16">
             <span className="text-sm font-semibold tracking-wider text-blue-500 uppercase">
               VINDHYACHAL FC ACADEMY
             </span>
