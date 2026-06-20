@@ -12,20 +12,22 @@ export default function AboutPage() {
         
         {/* 1. Banner Image Section */}
         <section className="relative h-[300px] md:h-[400px] flex items-center justify-center bg-black text-center">
-          <div className="absolute inset-0 z-0">
-            <Image
-              src="https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&q=80&w=1200"
-              alt="Football Stadium Banner"
-              fill
-              priority
-              className="object-cover opacity-60"
-            />
-            <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/70" />
-          </div>
+          {/* Background — Parallax */}
+          <div
+            className="absolute inset-0 z-0"
+            style={{
+              backgroundImage: "url('/about-background.jpeg')",
+              backgroundAttachment: "fixed",
+              backgroundPosition: "bottom",
+              backgroundSize: "cover",
+              opacity: 0.65,
+            }}
+          />
+          <div className="absolute inset-0 z-0 bg-gradient-to-b from-black/40 to-black/70" />
           
           <div className="relative z-10 px-6 md:px-12 flex flex-col gap-3">
             <span className="text-sm font-semibold tracking-wider text-blue-500 uppercase">
-              STRICKER FC ACADEMY
+              VINDHYACHAL FC ACADEMY
             </span>
             <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl md:text-6xl uppercase">
               About Our Club
@@ -48,7 +50,7 @@ export default function AboutPage() {
                   Our Journey and Heritage
                 </h2>
                 <p className="text-lg text-zinc-600 leading-relaxed">
-                  Striker FC was founded by a coalition of certified youth coaches and ex-professional athletes who wanted to design a premier soccer development structure in the region. What started with just two junior rosters has grown into a prestigious soccer academy.
+                  Vindhyachal FC was founded by a coalition of certified youth coaches and ex-professional athletes who wanted to design a premier soccer development structure in the region. What started with just two junior rosters has grown into a prestigious soccer academy.
                 </p>
                 <p className="text-sm text-zinc-500 leading-relaxed">
                   Over the past decade, we have established professional-grade training methodologies, scouted high-tier athletes, and built state-of-the-art facilities. Our commitment is to foster team collaboration, personal growth, and sports integrity.
@@ -111,7 +113,7 @@ export default function AboutPage() {
                 </div>
                 <h3 className="text-2xl font-extrabold text-zinc-900">Our Vision</h3>
                 <p className="text-zinc-600 text-sm leading-relaxed">
-                  To establish Striker FC as the nation&apos;s leading grassroots soccer training academy, serving as a trusted feeder network for college athletic recruitment divisions and professional MLS league scouts.
+                  To establish Vindhyachal FC as the nation&apos;s leading grassroots soccer training academy, serving as a trusted feeder network for college athletic recruitment divisions and professional MLS league scouts.
                 </p>
               </div>
 
