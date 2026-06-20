@@ -2,8 +2,9 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
-import Navbar from "@/components/Navbar";
+
 import ClubFooter from "@/components/ClubFooter";
+import Navbar from "@/components/Navbar";
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -47,7 +48,6 @@ export default function ContactPage() {
   return (
     <>
       <Navbar />
-
       <main className="flex-1 flex flex-col bg-white text-zinc-900">
         
         {/* Banner Section */}

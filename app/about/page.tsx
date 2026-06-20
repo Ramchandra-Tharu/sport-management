@@ -7,7 +7,6 @@ export default function AboutPage() {
   return (
     <>
       <Navbar />
-      
       <main className="flex-1 flex flex-col bg-white text-zinc-900">
         
         {/* 1. Banner Image Section */}

@@ -2,8 +2,9 @@
 
 import React, { useState, useEffect, useMemo } from "react";
 import Image from "next/image";
-import Navbar from "@/components/Navbar";
+
 import ClubFooter from "@/components/ClubFooter";
+import Navbar from "@/components/Navbar";
 import { GALLERY_PHOTOS, GalleryPhoto } from "@/lib/gallery";
 
 const CATEGORIES = ["All", "Match", "Training", "Trophy", "Event"] as const;
@@ -95,7 +96,6 @@ export default function GalleryPage() {
   return (
     <>
       <Navbar />
-
       <main className="flex-1 flex flex-col bg-white text-zinc-900">
         
         {/* Banner Section */}

@@ -21,7 +21,6 @@ export default function TeamPage() {
   return (
     <>
       <Navbar />
-
       <main className="flex-1 flex flex-col bg-white text-zinc-900">
         
         {/* Team Banner */}

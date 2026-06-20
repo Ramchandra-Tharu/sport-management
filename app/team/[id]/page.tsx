@@ -2,8 +2,9 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import Navbar from "@/components/Navbar";
+
 import ClubFooter from "@/components/ClubFooter";
+import Navbar from "@/components/Navbar";
 import { PLAYERS } from "@/lib/players";
 
 interface PageProps {
@@ -27,7 +28,6 @@ export default async function PlayerProfilePage({ params }: PageProps) {
   return (
     <>
       <Navbar />
-
       <main className="flex-1 flex flex-col bg-white text-zinc-900 py-12">
         <div className="mx-auto max-w-7xl px-6 md:px-12 w-full flex flex-col gap-8">
           
