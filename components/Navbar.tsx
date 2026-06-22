@@ -34,21 +34,29 @@ export default function Navbar() {
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-3 md:px-10">
 
-        {/* Logo + Club Name */}
-        <a href="/" className="flex items-center gap-3 group">
-          <div className="relative h-14 w-14 rounded-full bg-white/10 flex items-center justify-center overflow-hidden ring-2 ring-white/25 group-hover:ring-white/50 transition-all">
-            <Image
-              src="/logo-removebg-preview.png"
-              alt="Vindhyachal FC Logo"
-              fill
-              className="object-contain p-1"
-            />
-          </div>
-          <div className="flex flex-col leading-none gap-0.5">
-            <span className="text-base font-extrabold tracking-[0.2em] text-white/60 uppercase">Vindhyachal</span>
-            <span className="text-3xl font-black tracking-widest text-white uppercase">FC Academy</span>
-          </div>
-        </a>
+        {/* Logo + Club Name — only on home page */}
+        {pathname === "/" ? (
+          <a href="/" className="flex items-center gap-3 group">
+            <div className="relative h-12 w-12 flex-shrink-0">
+              <Image
+                src="/logo-removebg-preview.png"
+                alt="Vindhyachal FC Logo"
+                fill
+                className="object-contain"
+              />
+            </div>
+            <div className="flex flex-col leading-none">
+              <span className="text-2xl font-black tracking-tight text-white uppercase leading-tight">
+                Vindhyachal
+              </span>
+              <span className="text-sm font-bold tracking-[0.15em] text-white/75 uppercase leading-tight">
+                Football Club
+              </span>
+            </div>
+          </a>
+        ) : (
+          <div>{/* empty spacer */}</div>
+        )}
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex items-center gap-8">

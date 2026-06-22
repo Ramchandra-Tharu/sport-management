@@ -30,15 +30,19 @@ export default function ClubHero() {
           </div>
 
           {/* Big stacked headline */}
-          <h1 className="text-6xl sm:text-7xl md:text-8xl font-black tracking-tight text-white uppercase leading-[0.92] drop-shadow-lg">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-black tracking-tight text-white uppercase leading-[0.92] drop-shadow-lg">
             Train.<br />
             Grow.<br />
             Succeed.
           </h1>
 
           {/* Subtitle */}
-          <p className="text-base md:text-lg text-white/80 leading-relaxed max-w-sm">
-            Professional football coaching for ages 6–18. Small groups, top-level mentors, and player development programs.
+          <p className="text-base md:text-lg text-white/80 leading-relaxed">
+            Welcome to <span className="text-white font-bold">Vindhyachal Football Club</span>, where young footballers aged 10–18 learn,<br />
+            grow, and compete in a positive and professional environment.
+          </p>
+          <p className="text-sm md:text-base text-white/60 italic text-center whitespace-nowrap">
+            Every champion starts with a dream. Start yours today.
           </p>
 
           {/* CTA Buttons */}
