@@ -110,7 +110,7 @@ export default function ContactPage() {
                     <div className="flex flex-col gap-1">
                       <span className="text-xs font-bold text-zinc-400 uppercase tracking-wide">Club Address</span>
                       <span className="text-sm font-bold text-zinc-800">
-                        128 Sports Academy Lane, Cityville, NY 10024
+                        Bade Ground, Mandideep, Madhya Pradesh, India
                       </span>
                     </div>
                   </div>
@@ -124,8 +124,8 @@ export default function ContactPage() {
                     </div>
                     <div className="flex flex-col gap-1">
                       <span className="text-xs font-bold text-zinc-400 uppercase tracking-wide">Mobile Number</span>
-                      <a href="tel:+15550189900" className="text-sm font-bold text-zinc-800 hover:text-blue-600 transition-colors">
-                        +1 (555) 018-9900
+                      <a href="tel:+917772841392" className="text-sm font-bold text-zinc-800 hover:text-blue-600 transition-colors">
+                        +91 7772841392
                       </a>
                     </div>
                   </div>
@@ -139,8 +139,8 @@ export default function ContactPage() {
                     </div>
                     <div className="flex flex-col gap-1">
                       <span className="text-xs font-bold text-zinc-400 uppercase tracking-wide">Email Address</span>
-                      <a href="mailto:contact@vindhyachalfc.com" className="text-sm font-bold text-zinc-800 hover:text-blue-600 transition-colors">
-                        contact@vindhyachalfc.com
+                      <a href="mailto:vindhyachalfootballclub@gmail.com" className="text-sm font-bold text-zinc-800 hover:text-blue-600 transition-colors">
+                        vindhyachalfootballclub@gmail.com
                       </a>
                     </div>
                   </div>
@@ -158,7 +158,7 @@ export default function ContactPage() {
                             <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
                           </svg>
                         ),
-                        link: "#",
+                        link: "https://www.facebook.com/search/top?q=vindhyachal%20football%20club%20mandideep",
                       },
                       {
                         name: "Instagram",
@@ -169,7 +169,7 @@ export default function ContactPage() {
                             <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
                           </svg>
                         ),
-                        link: "#",
+                        link: "https://www.instagram.com/vindhyachal.fc",
                       },
                       {
                         name: "YouTube",
@@ -188,7 +188,7 @@ export default function ContactPage() {
                             <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
                           </svg>
                         ),
-                        link: "#",
+                        link: "https://wa.me/917772841392",
                       },
                     ].map((social, idx) => (
                       <a
@@ -271,7 +271,7 @@ export default function ContactPage() {
                         name="phone"
                         value={formData.phone}
                         onChange={handleInputChange}
-                        placeholder="+1 (555) 000-0000"
+                        placeholder="+91 7772841392"
                         className="h-12 rounded-2xl border border-zinc-200 bg-white px-4 text-sm text-zinc-900 placeholder-zinc-400 focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500 transition-all shadow-sm"
                       />
                     </div>

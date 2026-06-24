@@ -122,20 +122,20 @@ export default function Footer() {
               <div className="rounded-2xl border border-dark-border bg-dark-card p-4 flex flex-col gap-1.5">
                 <span className="text-xs font-bold text-zinc-500 uppercase tracking-wide">Feel free to call me</span>
                 <a
-                  href="tel:+12025550147"
+                  href="tel:+917772841392"
                   className="text-sm font-bold text-zinc-900 hover:text-lime-neon transition-colors w-fit"
                 >
-                  +1 (202) 555 0147
+                  +91 7772841392
                 </a>
               </div>
 
               <div className="rounded-2xl border border-dark-border bg-dark-card p-4 flex flex-col gap-1.5">
                 <span className="text-xs font-bold text-zinc-500 uppercase tracking-wide">Email me on</span>
                 <a
-                  href="mailto:support@yourbrand.com"
+                  href="mailto:vindhyachalfootballclub@gmail.com"
                   className="text-sm font-bold text-zinc-900 hover:text-lime-neon transition-colors w-fit"
                 >
-                  support@yourbrand.com
+                  vindhyachalfootballclub@gmail.com
                 </a>
               </div>
             </div>

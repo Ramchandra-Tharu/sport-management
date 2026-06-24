@@ -43,15 +43,15 @@ export default function ClubAbout() {
             </span>
             
             <h2 className="text-3xl font-extrabold tracking-tight text-zinc-900 sm:text-4xl">
-              Nurturing talent & athletic ambition
+              A Home for Football in Mandideep
             </h2>
 
             <p className="text-lg text-zinc-600 leading-relaxed">
-              Founded in 2011, Vindhyachal FC has been at the forefront of soccer development. Our mission is to provide comprehensive soccer training, foster a competitive mindset, and instill team spirit in players of all age categories. 
+              Our club was started with the aim of giving young players in Mandideep a place to learn, improve, and enjoy football. We believe that with the right guidance, hard work, and opportunities, local talent can reach much bigger stages.
             </p>
 
             <p className="text-sm text-zinc-500 leading-relaxed">
-              Whether you are taking your first kicks in soccer or preparing for national college league scouts, our custom training modules, qualified mentors, and state-of-the-art turf guarantee a pathway to success.
+              Through regular training sessions, friendly matches, and tournaments, we help players develop their skills while building confidence, discipline, and teamwork. Our goal is not only to grow the football culture in Mandideep but also to help talented players take the next step towards district, state, and national-level football.
             </p>
 
             <div>

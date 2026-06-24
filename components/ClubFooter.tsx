@@ -36,7 +36,7 @@ export default function ClubFooter() {
                       <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
                     </svg>
                   ),
-                  link: "#",
+                  link: "https://www.facebook.com/search/top?q=vindhyachal%20football%20club%20mandideep",
                 },
                 {
                   name: "YouTube",
@@ -57,7 +57,7 @@ export default function ClubFooter() {
                       <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
                     </svg>
                   ),
-                  link: "#",
+                  link: "https://www.instagram.com/vindhyachal.fc",
                 },
               ].map((social, idx) => (
                 <a
@@ -101,17 +101,17 @@ export default function ClubFooter() {
               <div className="rounded-2xl border border-zinc-250 bg-zinc-50 p-4 flex flex-col gap-1">
                 <span className="text-xs font-bold text-zinc-400 uppercase tracking-wide">Stadium Location</span>
                 <span className="text-sm font-semibold text-zinc-800">
-                  128 Sports Academy Lane, Cityville, NY 10024
+                  Bade Ground, Mandideep, Madhya Pradesh, India
                 </span>
               </div>
 
               <div className="rounded-2xl border border-zinc-250 bg-zinc-50 p-4 flex flex-col gap-1">
                 <span className="text-xs font-bold text-zinc-400 uppercase tracking-wide">Telephone Contact</span>
                 <a
-                  href="tel:+15550189900"
+                  href="tel:+917772841392"
                   className="text-sm font-bold text-zinc-800 hover:text-blue-600 transition-colors w-fit"
                 >
-                  +1 (555) 018-9900
+                  +91 7772841392
                 </a>
               </div>
             </div>
