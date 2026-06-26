@@ -2,12 +2,12 @@ import React from "react";
 import Image from "next/image";
 
 const PHOTOS = [
-  "https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&q=80&w=400",
-  "https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&fit=crop&q=80&w=400",
-  "https://images.unsplash.com/photo-1522778119026-d647f0596c20?auto=format&fit=crop&q=80&w=400",
-  "https://images.unsplash.com/photo-1518063319789-7217e6706b04?auto=format&fit=crop&q=80&w=400",
-  "https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&q=80&w=400",
-  "https://images.unsplash.com/photo-1531830307402-b5de39772b55?auto=format&fit=crop&q=80&w=400",
+  "/practice/WhatsApp Image 2026-06-23 at 1.19.50 PM.jpeg",
+  "/practice/WhatsApp Image 2026-06-25 at 11.48.06 PM.jpeg",
+  "/practice/WhatsApp Image 2026-06-25 at 11.48.07 PM.jpeg",
+  "/practice/WhatsApp Image 2026-06-25 at 11.48.08 PM (1).jpeg",
+  "/practice/WhatsApp Image 2026-06-25 at 11.48.08 PM (2).jpeg",
+  "/practice/WhatsApp Image 2026-06-25 at 11.48.08 PM (3).jpeg",
 ];
 
 export default function GalleryPreview() {
