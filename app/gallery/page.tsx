@@ -7,15 +7,16 @@ import ClubFooter from "@/components/ClubFooter";
 import Navbar from "@/components/Navbar";
 import { GALLERY_PHOTOS, GalleryPhoto } from "@/lib/gallery";
 
-const CATEGORIES = ["All", "Match", "Training", "Trophy", "Event"] as const;
+const CATEGORIES = ["All", "Match", "Training", "Trophy", "Event", "Video"] as const;
 type CategoryType = (typeof CATEGORIES)[number];
 
 const CATEGORY_LABELS: Record<CategoryType, string> = {
-  All: "All Photos",
+  All: "All Media",
   Match: "Match Photos",
   Training: "Training Photos",
   Trophy: "Trophy Photos",
   Event: "Events",
+  Video: "Videos",
 };
 
 export default function GalleryPage() {
@@ -27,7 +28,9 @@ export default function GalleryPage() {
   // Filter photos based on active category and search query
   const filteredPhotos = useMemo(() => {
     return GALLERY_PHOTOS.filter((photo) => {
-      const matchesCategory = activeCategory === "All" || photo.category === activeCategory;
+      const matchesCategory =
+        activeCategory === "All" ||
+        (activeCategory === "Video" ? photo.type === "video" : photo.category === activeCategory && photo.type !== "video");
       const matchesSearch =
         photo.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
         photo.description.toLowerCase().includes(searchQuery.toLowerCase());
@@ -209,18 +212,49 @@ export default function GalleryPage() {
                     onClick={() => setLightboxIndex(idx)}
                     className="break-inside-avoid mb-6 rounded-3xl border border-zinc-200 bg-white overflow-hidden shadow-sm hover:shadow-md hover:border-blue-500 transition-all duration-300 group cursor-pointer"
                   >
-                    <div className={`relative ${photo.aspect} rounded-t-2xl overflow-hidden bg-zinc-50`}>
-                      <Image
-                        src={photo.src}
-                        alt={photo.title}
-                        fill
-                        sizes="(max-w-7xl) 100vw, 300px"
-                        className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
-                      />
-                      {/* Image Category Badge overlay */}
-                      <span className="absolute bottom-3 left-3 bg-zinc-900/80 backdrop-blur-sm text-white text-[10px] font-bold tracking-wider uppercase px-2.5 py-1 rounded-full border border-white/10">
-                        {photo.category}
-                      </span>
+                    <div className={`relative ${photo.aspect} rounded-t-2xl overflow-hidden bg-zinc-900`}>
+                      {photo.type === "video" ? (
+                        <>
+                          {/* Video poster thumbnail */}
+                          {photo.poster && (
+                            <Image
+                              src={photo.poster}
+                              alt={photo.title}
+                              fill
+                              sizes="(max-width: 768px) 100vw, 300px"
+                              className="object-cover transition-transform duration-500 group-hover:scale-[1.03] brightness-75"
+                            />
+                          )}
+                          {/* Play button overlay */}
+                          <div className="absolute inset-0 flex items-center justify-center">
+                            <div className="flex h-16 w-16 items-center justify-center rounded-full bg-blue-600/90 shadow-lg shadow-blue-600/40 group-hover:scale-110 group-hover:bg-blue-500 transition-all duration-300 border-2 border-white/30">
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" className="h-7 w-7 ml-1">
+                                <path d="M8 5v14l11-7z" />
+                              </svg>
+                            </div>
+                          </div>
+                          {/* Video badge */}
+                          <span className="absolute bottom-3 left-3 bg-blue-600/90 backdrop-blur-sm text-white text-[10px] font-bold tracking-wider uppercase px-2.5 py-1 rounded-full flex items-center gap-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="h-3 w-3">
+                              <path d="M4 4l16 8-16 8V4z" />
+                            </svg>
+                            Video
+                          </span>
+                        </>
+                      ) : (
+                        <>
+                          <Image
+                            src={photo.src}
+                            alt={photo.title}
+                            fill
+                            sizes="(max-w-7xl) 100vw, 300px"
+                            className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                          />
+                          <span className="absolute bottom-3 left-3 bg-zinc-900/80 backdrop-blur-sm text-white text-[10px] font-bold tracking-wider uppercase px-2.5 py-1 rounded-full border border-white/10">
+                            {photo.category}
+                          </span>
+                        </>
+                      )}
                     </div>
 
                     <div className="p-5 flex flex-col gap-1">
@@ -335,16 +369,27 @@ export default function GalleryPage() {
                 </svg>
               </button>
 
-              {/* Lightbox Image */}
+              {/* Lightbox Image or Video */}
               <div className="relative w-full h-full rounded-2xl overflow-hidden shadow-2xl border border-zinc-800">
-                <Image
-                  src={activePhoto.src}
-                  alt={activePhoto.title}
-                  fill
-                  sizes="100vw"
-                  className="object-contain"
-                  priority
-                />
+                {activePhoto.type === "video" ? (
+                  <video
+                    key={activePhoto.src}
+                    src={activePhoto.src}
+                    poster={activePhoto.poster}
+                    controls
+                    autoPlay
+                    className="w-full h-full object-contain bg-black"
+                  />
+                ) : (
+                  <Image
+                    src={activePhoto.src}
+                    alt={activePhoto.title}
+                    fill
+                    sizes="100vw"
+                    className="object-contain"
+                    priority
+                  />
+                )}
               </div>
 
               {/* Next Navigation Button */}
