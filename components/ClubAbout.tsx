@@ -28,8 +28,8 @@ export default function ClubAbout() {
 
             <div className="overflow-hidden rounded-3xl border border-zinc-250 aspect-[4/3] w-full max-w-[500px] shadow-lg relative group">
               <Image
-                src="https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&q=80&w=800"
-                alt="Youth Football Training Drill"
+                src="/practice/WhatsApp Image 2026-06-23 at 1.19.50 PM.jpeg"
+                alt="Vindhyachal FC — U17 7-a-side Tournament at Bhopal"
                 fill
                 className="object-cover transition-transform duration-700 group-hover:scale-105"
               />

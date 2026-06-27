@@ -1,6 +1,5 @@
 import Navbar from "@/components/Navbar";
 import ClubHero from "@/components/ClubHero";
-import ClubStats from "@/components/ClubStats";
 import ClubAbout from "@/components/ClubAbout";
 import TrainingPrograms from "@/components/TrainingPrograms";
 import UpcomingMatches from "@/components/UpcomingMatches";
@@ -16,7 +15,6 @@ export default function Home() {
       <Navbar />
       <main className="flex-1 flex flex-col bg-white">
         <ClubHero />
-        <ClubStats />
         <ClubAbout />
         <TrainingPrograms />
         <UpcomingMatches />

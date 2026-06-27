@@ -178,62 +178,101 @@ export default function AboutPage() {
           </div>
         </section>
 
-        {/* 6. Facilities Section */}
+        {/* 6. Facilities / Ground Section */}
         <section className="py-16 md:py-24 bg-white">
           <div className="mx-auto max-w-7xl px-6 md:px-12">
-            
+
             {/* Section Header */}
-            <div className="text-center max-w-3xl mx-auto mb-16 flex flex-col gap-3">
+            <div className="text-center max-w-2xl mx-auto mb-16 flex flex-col gap-3">
               <span className="text-sm font-semibold tracking-wider text-blue-600 uppercase">
-                FACILITIES
+                OUR GROUND & TRAINING
               </span>
               <h2 className="text-3xl font-extrabold tracking-tight text-zinc-900 sm:text-4xl">
-                Elite Training Grounds
+                Where We Train &amp; Play
               </h2>
               <p className="text-zinc-500 text-base">
-                Discover our professional club facility units designed to optimize student athletic progression.
+                Every session, every game, every moment — built at Bade Ground, Mandideep.
               </p>
             </div>
 
-            {/* Facilities Cards Grid */}
-            <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-              {[
-                {
-                  title: "Turf Playing Fields",
-                  desc: "Three FIFA-grade artificial turf pitches allowing high-traction training routines in all weather setups.",
-                  image: "https://images.unsplash.com/photo-1522778119026-d647f0596c20?auto=format&fit=crop&q=80&w=400"
-                },
-                {
-                  title: "Performance Gym",
-                  desc: "High-spec conditioning centers detailing biomechanics tracking, speed-resistance bands, and weight stacks.",
-                  image: "https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&q=80&w=400"
-                },
-                {
-                  title: "Tactical Analytics Room",
-                  desc: "Video projection rooms where mentors analyze player tactical footage, positioning errors, and match strategies.",
-                  image: "https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&q=80&w=400"
-                }
-              ].map((facility, idx) => (
-                <div
-                  key={idx}
-                  className="rounded-3xl border border-zinc-200 overflow-hidden bg-white shadow-sm flex flex-col hover:border-blue-400 hover:shadow-md transition-all duration-300"
-                >
-                  <div className="relative aspect-video">
-                    <Image
-                      src={facility.image}
-                      alt={facility.title}
-                      fill
-                      className="object-cover"
-                    />
-                  </div>
-                  <div className="p-6 flex flex-col gap-2">
-                    <h3 className="text-base font-bold text-zinc-900">{facility.title}</h3>
-                    <p className="text-xs text-zinc-500 leading-relaxed">{facility.desc}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
+            {/* Cards Grid */}
+            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
 
+              {/* Card 1 — Big featured card */}
+              <div className="lg:col-span-2 relative rounded-3xl overflow-hidden group shadow-sm border border-zinc-200 hover:shadow-xl hover:border-blue-400 transition-all duration-500 min-h-[320px]">
+                <Image
+                  src="/practice/WhatsApp Image 2026-06-25 at 11.48.08 PM (3).jpeg"
+                  alt="Bade Ground, Mandideep"
+                  fill
+                  className="object-cover transition-transform duration-700 group-hover:scale-105"
+                />
+                {/* Dark gradient overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
+                {/* Content */}
+                <div className="absolute bottom-0 left-0 right-0 p-7 flex flex-col gap-2">
+                  <span className="text-xs font-bold uppercase tracking-widest text-blue-400">Training Ground</span>
+                  <h3 className="text-2xl font-extrabold text-white">Bade Ground, Mandideep</h3>
+                  <p className="text-sm text-zinc-300 leading-relaxed max-w-md">
+                    Our home ground where every session happens — open daily for practice, 5:00 PM to 7:30 PM.
+                  </p>
+                </div>
+              </div>
+
+              {/* Card 2 — Squad */}
+              <div className="relative rounded-3xl overflow-hidden group shadow-sm border border-zinc-200 hover:shadow-xl hover:border-blue-400 transition-all duration-500 min-h-[320px]">
+                <Image
+                  src="/practice/WhatsApp Image 2026-06-26 at 12.18.15 AM.jpeg"
+                  alt="Squad — Vindhyachal FC"
+                  fill
+                  className="object-cover transition-transform duration-700 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
+                <div className="absolute bottom-0 left-0 right-0 p-7 flex flex-col gap-2">
+                  <span className="text-xs font-bold uppercase tracking-widest text-emerald-400">Players</span>
+                  <h3 className="text-xl font-extrabold text-white">Dedicated Squad</h3>
+                  <p className="text-sm text-zinc-300 leading-relaxed">
+                    Boys &amp; girls of all ages training together — building skill, discipline, and teamwork every day.
+                  </p>
+                </div>
+              </div>
+
+              {/* Card 3 — Matches */}
+              <div className="relative rounded-3xl overflow-hidden group shadow-sm border border-zinc-200 hover:shadow-xl hover:border-blue-400 transition-all duration-500 min-h-[280px]">
+                <Image
+                  src="/practice/WhatsApp Image 2026-06-26 at 12.18.15 AM (1).jpeg"
+                  alt="U20 Tournament — Indore"
+                  fill
+                  className="object-cover transition-transform duration-700 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
+                <div className="absolute bottom-0 left-0 right-0 p-7 flex flex-col gap-2">
+                  <span className="text-xs font-bold uppercase tracking-widest text-amber-400">Competitions</span>
+                  <h3 className="text-xl font-extrabold text-white">Tournaments &amp; Fixtures</h3>
+                  <p className="text-sm text-zinc-300 leading-relaxed">
+                    From local friendlies to U20 tournaments at Indore — our players compete and grow at every level.
+                  </p>
+                </div>
+              </div>
+
+              {/* Card 4 — Events */}
+              <div className="lg:col-span-2 relative rounded-3xl overflow-hidden group shadow-sm border border-zinc-200 hover:shadow-xl hover:border-blue-400 transition-all duration-500 min-h-[280px]">
+                <Image
+                  src="/practice/WhatsApp Image 2026-06-26 at 12.18.16 AM.jpeg"
+                  alt="Khel Mahakumbh — Vindhyachal FC"
+                  fill
+                  className="object-cover object-top transition-transform duration-700 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
+                <div className="absolute bottom-0 left-0 right-0 p-7 flex flex-col gap-2">
+                  <span className="text-xs font-bold uppercase tracking-widest text-purple-400">Events</span>
+                  <h3 className="text-xl font-extrabold text-white">Club Events &amp; Celebrations</h3>
+                  <p className="text-sm text-zinc-300 leading-relaxed max-w-lg">
+                    Beyond football — Holi, Diwali, Khel Mahakumbh, and more. We celebrate as one team.
+                  </p>
+                </div>
+              </div>
+
+            </div>
           </div>
         </section>
 
